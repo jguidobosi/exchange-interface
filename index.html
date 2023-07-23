@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Exchanger</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules\@popperjs\core\dist\umd\popper.min.js"></script>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-primary nav-title">
+        <a class="navbar-brand left-margin2" href="#"><strong>$</strong>Exchange House<strong>$</strong></a>
+      </nav>
+    <form>
+        <div class="container-xs">
+            <div class="row margin left-margin">
+            </div>
+            <div class="row left-margin">
+                <div class="col-2">
+                    <input class="form-control margin" id="amountToConvert" placeholder="Enter the amount">
+                </div>
+            </div>
+            <div class="row left-margin">
+                <div class="col-1">
+                    <div class="bold">From:</div>
+                </div>
+                <div class="col-1">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle currencyBtn force-white" type="button"
+                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expande
+                            d="false">
+                            Currency
+                        </button>
+                        <div id="inputCurrencyList" class="dropdown-menu pre-scrollable" aria-labelledby="dropdownMenuButton">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row left-margin">
+                <div class="col-1">
+                    <div class="bold">To:</div>
+                </div>
+                <div class="col-1">
+                    <div class="dropdown margin">
+                        <button class="btn dropdown-toggle currencyBtn force-white" type="button"
+                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expande
+                            d="false">
+                            Currency
+                        </button>
+                        <div id="outputCurrencyList" class="dropdown-menu pre-scrollable" aria-labelledby="dropdownMenuButton">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row left-margin">
+                <div class="col-2">
+                    <button type="button" id="convertButton" class="btn btn-primary margin long"><strong class="inline">$</strong><p class="inline">Convert</p><strong class="inline">$</strong></button>
+                    <div id="result" class="alert alert-info margin hidden" role="alert">
+                        <strong id="inputAmountAndCurrency" class="inline">34 USD</strong>
+                        <p class="inline">=</p>
+                        <strong id="outputAmountAndCurrency" class="inline">37437 ARS</strong>
+                        <p id="date" >April 23th, 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="main.js"></script>
+    <script src="tests.js"></script>
+</body>
