@@ -1,0 +1,19 @@
+{
+  "name": "exchange-interface",
+  "version": "1.0.0",
+  "description": "APIs practice dependencies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.0",
+    "jquery": "^3.7.0"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.16",
+    "cypress": "^12.17.2"
+  }
+}
