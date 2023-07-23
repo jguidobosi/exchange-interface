@@ -1,0 +1,31 @@
+.dropdown-menu {
+    max-height: 200px;
+    overflow-y: scroll
+}
+.inline {
+    display: inline;
+}
+body{
+    background-color:lightcyan;
+}
+.force-white{
+    background-color:white;
+}
+.long{
+    padding: 10px 115px;
+}
+.margin {
+    margin: 0px 0px 10px;
+}
+.left-margin{
+    margin-left: 2%;
+}
+.left-margin2{
+    margin-left: 3%;
+}
+.hidden{
+ visibility: hidden;   
+}
+.bold{
+    font-weight: bold;
+}
